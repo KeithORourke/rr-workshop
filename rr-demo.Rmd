@@ -1,0 +1,37 @@
+---
+title: "Report"
+author: "Keith"
+date: "29/05/2019"
+output: html_document
+---
+```{r global_options, echo=FALSE}
+knitr::opts_chunk$set(echo=FALSE, fig.path = "figs/")
+```
+
+
+
+
+```{r first}
+library(gapminder)
+library(ggplot2)
+
+data("gapminder")
+
+str(gapminder)
+
+ggplot(data = gapminder, mapping = aes(x=gdpPercap, y = lifeExp)) + geom_point()
+
+
+```
+
+
+
+```{r Over_Time, fig.width=4, fig.height=4}
+
+ggplot(data = gapminder, mapping = aes(x=year, y = lifeExp)) + geom_point()
+
+```
+
+In line `r max(gapminder$pop)`
+
+
