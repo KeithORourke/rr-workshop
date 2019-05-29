@@ -2,7 +2,10 @@
 title: "Report"
 author: "Keith"
 date: "29/05/2019"
-output: html_document
+output: 
+  html_document:
+    keep_md: true
+    
 ---
 ```{r global_options, echo=FALSE}
 knitr::opts_chunk$set(echo=FALSE, fig.path = "figs/")
@@ -36,3 +39,5 @@ In line `r max(gapminder$pop)`
 
 
 ** Changes ** 
+
+https://github.com/KeithORourke/rr-workshop.git
