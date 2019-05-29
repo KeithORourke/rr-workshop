@@ -35,3 +35,4 @@ ggplot(data = gapminder, mapping = aes(x=year, y = lifeExp)) + geom_point()
 In line `r max(gapminder$pop)`
 
 
+** Changes ** 
